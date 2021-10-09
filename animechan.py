@@ -10,5 +10,7 @@ ctx.verify_mode = ssl.CERT_NONE
 JS = urlopen('https://animechan.vercel.app/api/random', context=ctx).read()
 js = json.loads(JS)
 
+## API https://animechan.vercel.app/ by https://www.rocktimcodes.site/ !!!! GO SUPPORT!!!!!
+
 # print(js['quote'])
 # print('  ~~  ' + js['character'] + ' from ' + js['anime'])
