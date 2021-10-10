@@ -1,6 +1,8 @@
 from urllib.request import urlopen
 import ssl
 import json
+import textwrap
+
 
 # Ignoring SSL certificate errors
 ctx = ssl.create_default_context()
@@ -14,3 +16,6 @@ js = json.loads(JS)
 
 # print(js['quote'])
 # print('  ~~  ' + js['character'] + ' from ' + js['anime'])
+
+quote = textwrap.wrap(js['quote'])
+by = ' ~~  ' + js['character'] + ', from ' + js['anime']
