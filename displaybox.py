@@ -1,6 +1,6 @@
 from tkinter import *
 from animechan import quote, by
-from openBroswer import search_anime
+from openBrowser import search_anime
 
 qbox = Tk()
 text1 = Text(qbox, height=8, width=70)
