@@ -4,7 +4,7 @@ import json
 import textwrap
 
 
-# Ignoring SSL certificate errors
+# Ignoring SSL (Secure Sockets Layer) certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
